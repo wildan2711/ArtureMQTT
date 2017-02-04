@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <Button
+        style="@style/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monitor"
+        android:id="@+id/monitor"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickMonitor" />
+
+    <Button
+        style="@style/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/configure"
+        android:id="@+id/configure"
+        android:onClick="clickConfigure"
+        android:layout_below="@+id/monitor"
+        android:layout_alignLeft="@+id/monitor"
+        android:layout_alignStart="@+id/monitor"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        style="@style/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:id="@+id/about"
+        android:backgroundTint="?attr/colorPrimary"
+        android:onClick="clickAbout"
+        android:layout_below="@+id/configure"
+        android:layout_alignLeft="@+id/configure"
+        android:layout_alignStart="@+id/configure"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/web_hi_res_512"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/monitor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

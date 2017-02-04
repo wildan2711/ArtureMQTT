@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_configure" tools:context="com.arture.arture.ConfigureActivity">
+
+    <TextView
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/configure"
+        android:id="@+id/titleConfigure"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/choosePlant"
+        android:id="@+id/textChoosePlant"
+        android:layout_marginTop="96dp"
+        android:layout_below="@+id/titleConfigure"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choosePlant"
+        android:layout_below="@+id/textChoosePlant"
+        android:layout_alignLeft="@+id/textChoosePlant"
+        android:layout_alignStart="@+id/textChoosePlant" />
+
+    <TextView
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textpH"
+        android:text="@string/ph"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textPPM"
+        android:id="@+id/textPPM"
+        android:layout_alignTop="@+id/textpH"
+        android:layout_alignRight="@+id/titleConfigure"
+        android:layout_alignEnd="@+id/titleConfigure" />
+
+    <Button
+        style="@style/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apply"
+        android:id="@+id/applyBtn"
+        android:layout_below="@+id/textPPM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp" />
+
+    <TextView
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/none"
+        android:id="@+id/viewPH"
+        android:layout_below="@+id/textpH"
+        android:layout_alignLeft="@+id/textpH"
+        android:layout_alignStart="@+id/textpH" />
+
+    <TextView
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/none"
+        android:id="@+id/viewPPM"
+        android:layout_alignTop="@+id/viewPH"
+        android:layout_alignLeft="@+id/textPPM"
+        android:layout_alignStart="@+id/textPPM" />
+
+</RelativeLayout>
